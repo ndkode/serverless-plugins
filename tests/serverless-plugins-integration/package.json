@@ -20,14 +20,15 @@
     "test:sqs:autocreate": "node test-sqs-autocreate"
   },
   "dependencies": {
+    "@ndkode/serverless-offline-dynamodb-streams": "^7.0.0",
+    "@ndkode/serverless-offline-sqs": "^8.0.0",
     "aws-sdk": "^2.1234.0",
     "lodash": "^4.17.21",
     "minio": "^7.0.32",
     "pump": "^3.0.0",
     "serverless": "^3.36.0",
     "serverless-offline": "^13",
-    "@ndkode/serverless-offline-dynamodb-streams": "^7.0.0",
-    "@ndkode/serverless-offline-sqs": "^8.0.0",
     "signal-exit": "^3.0.7"
-  }
+  },
+  "gitHead": "166a44d1545bd2164fa151d2b062e08894756194"
 }

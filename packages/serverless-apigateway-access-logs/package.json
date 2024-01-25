@@ -1,5 +1,6 @@
 {
   "name": "@ndkode/serverless-apigateway-access-logs",
+  "private": false,
   "version": "2.0.0",
   "description": "Serverless plugin to configure Api Gateway access logs",
   "main": "src",
@@ -26,5 +27,6 @@
     "kinesis",
     "serverless",
     "lambda"
-  ]
+  ],
+  "gitHead": "166a44d1545bd2164fa151d2b062e08894756194"
 }

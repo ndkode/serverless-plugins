@@ -1,5 +1,6 @@
 {
   "name": "@ndkode/dynamodb-streams-readable",
+  "private": false,
   "version": "3.0.0",
   "description": "Simple readable stream client for AWS DynamoDB Streams",
   "main": "src",
@@ -26,5 +27,6 @@
     "dynamodb",
     "aws",
     "stream"
-  ]
+  ],
+  "gitHead": "166a44d1545bd2164fa151d2b062e08894756194"
 }
