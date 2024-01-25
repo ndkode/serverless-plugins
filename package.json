@@ -18,7 +18,7 @@
     "test:integration": "lerna run test --stream --scope serverless-offline-plugins-integration",
     "test": "npm run eslint && npm run test:unit && npm run test:integration",
     "publish": "lerna publish",
-    "publish-exist": "lerna publish from-package --yes --access public"
+    "publish-exist": "lerna publish from-package --yes"
   },
   "dependencies": {
     "lerna": "^7.4.2",
@@ -33,5 +33,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "version": "0.0.0"
 }
