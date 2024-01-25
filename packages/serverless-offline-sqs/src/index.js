@@ -73,7 +73,7 @@ class ServerlessOfflineSQS {
   }
 
   ready() {
-    if (process.env.NODE_ENV !== 'test') {
+    if (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'prod') {
       this._listenForTermination();
     }
   }
@@ -96,7 +96,7 @@ class ServerlessOfflineSQS {
   }
 
   async end(skipExit) {
-    if (process.env.NODE_ENV === 'test' && skipExit === undefined) {
+    if ((process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'prod') && skipExit === undefined) {
       return;
     }
 

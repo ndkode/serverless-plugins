@@ -57,7 +57,7 @@ class ServerlessOfflineDynamodbStreams {
   }
 
   ready() {
-    if (process.env.NODE_ENV !== 'test') {
+    if (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'prod') {
       this._listenForTermination();
     }
   }
