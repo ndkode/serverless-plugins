@@ -1,6 +1,5 @@
 {
   "name": "serverless-plugins",
-  "private": true,
   "engines": {
     "node": ">=18"
   },
