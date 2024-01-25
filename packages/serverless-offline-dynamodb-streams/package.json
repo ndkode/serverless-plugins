@@ -1,5 +1,5 @@
 {
-  "name": "serverless-offline-dynamodb-streams",
+  "name": "@ndkode/serverless-offline-dynamodb-streams",
   "version": "7.0.0",
   "description": "Emulate AWS λ and DynamoDB streams locally when developing your Serverless project",
   "main": "src",
@@ -26,8 +26,9 @@
     "serverless-offline": "^10.0.2 || >=11"
   },
   "dependencies": {
-    "aws-sdk": "^2.1234.0",
-    "dynamodb-streams-readable": "^3.0.0",
+    "@aws-sdk/client-dynamodb": "^3.499.0",
+    "@aws-sdk/client-dynamodb-streams": "^3.499.0",
+    "@ndkode/dynamodb-streams-readable": "^3.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {

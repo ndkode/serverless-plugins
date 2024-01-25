@@ -1,5 +1,5 @@
 {
-  "name": "serverless-offline-sqs",
+  "name": "@ndkode/serverless-offline-sqs",
   "version": "8.0.0",
   "description": "Emulate AWS λ and SQS locally when developing your Serverless project",
   "main": "src",
@@ -30,7 +30,7 @@
     "serverless-offline": "^10.0.2 || >=11"
   },
   "dependencies": {
-    "aws-sdk": "^2.1234.0",
+    "@aws-sdk/client-sqs": "^3.499.0",
     "lodash": "^4.17.21",
     "p-queue": "^6.6.2"
   },

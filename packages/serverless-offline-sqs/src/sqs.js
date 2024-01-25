@@ -1,4 +1,4 @@
-const SQSClient = require('aws-sdk/clients/sqs');
+const { SQSClient } = require('@aws-sdk/client-sqs');
 
 const {
   chunk,

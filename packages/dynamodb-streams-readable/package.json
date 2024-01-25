@@ -1,5 +1,5 @@
 {
-  "name": "dynamodb-streams-readable",
+  "name": "@ndkode/dynamodb-streams-readable",
   "version": "3.0.0",
   "description": "Simple readable stream client for AWS DynamoDB Streams",
   "main": "src",

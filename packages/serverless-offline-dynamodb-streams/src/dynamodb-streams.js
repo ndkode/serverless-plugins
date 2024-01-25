@@ -1,6 +1,6 @@
 const {Writable} = require('stream');
-const DynamodbClient = require('aws-sdk/clients/dynamodb');
-const DynamodbStreamsClient = require('aws-sdk/clients/dynamodbstreams');
+const { DynamoDBClient } = require('@aws-sdk/client-dynamodb');
+const { DynamoDBStreamsClient } = require('@aws-sdk/client-dynamodb-streams');
 const DynamodbStreamsReadable = require('dynamodb-streams-readable');
 const {assign} = require('lodash/fp');
 const DynamodbStreamsEventDefinition = require('./dynamodb-streams-event-definition');
@@ -19,8 +19,8 @@ class DynamodbStreams {
     this.lambda = lambda;
     this.options = options;
 
-    this.client = new DynamodbClient(this.options);
-    this.streamsClient = new DynamodbStreamsClient(this.options);
+    this.client = new DynamoDBClient(this.options);
+    this.streamsClient = new DynamoDBStreamsClient(this.options);
 
     this.readables = [];
   }
