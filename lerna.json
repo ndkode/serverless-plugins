@@ -1,5 +1,5 @@
 {
-  "packages": ["packages/*", "tests/*"],
+  "packages": ["packages/*"],
   "version": "independent",
   "command": {
     "bootstrap": {
